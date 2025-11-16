@@ -65,14 +65,14 @@ LLM模型套件，提供LLM大模型端到端训练流程，提供模型结构�
 适配支持PyTorch原生库及主流三方库，补齐生态能力， 提高昇腾平台易用性。
 # 昇腾AI大模型全流程工具链
 ## MindStudio
-![[Pasted image 20251101111452.png]]
+![](assets/昇腾AI基础软件/Pasted%20image%2020251101111452.png)
 #### MindStudio Insight
 是一款调优可视化工具，集成了CANN数据的分析和可视化等功能。
 # 昇腾推理引擎
 ## MindIE
 MindIE（Mind Inference Engine，昇腾推理引擎）是华为昇腾针对AI全场景业务的推理加速套件
 ![[HCIP-AI Solution Architect V1.0 培训教材.pdf#page=513&rect=183,461,365,633&color=yellow|HCIP-AI Solution Architect V1.0 培训教材, p.513|500]]
-![[Pasted image 20251101111935.png|600]]
+![600](assets/昇腾AI基础软件/Pasted%20image%2020251101111935.png)
 #### MindIE-RT：昇腾AI处理器推理加速引擎
 #### MindIE-ATB：基于Transformer结构的加速库
 #### MindSpore+MindIE：图编译/分布式并行/模型压缩
