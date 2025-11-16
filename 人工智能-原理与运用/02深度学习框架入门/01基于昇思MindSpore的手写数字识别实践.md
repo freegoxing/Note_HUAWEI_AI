@@ -239,7 +239,7 @@ After dense: (64, 512)
 - $weight\_init$：权重初始化
 - $bias\_init$：偏置初始化
 #### nn.ReLU
-[[全连接神经网络以及训练流程#ReLU 函数|ReLU]]是网络中加入的非线性的激活函数，帮助神经网络学习各种复杂的特征
+[[../../HCIA-AI/2-深度学习和大模型基础/全连接神经网络以及训练流程#ReLU 函数|ReLU]]是网络中加入的非线性的激活函数，帮助神经网络学习各种复杂的特征
 ```python 
 relu_layer = nn.ReLU()  
 image_after_relu = relu_layer(image_after_dense1[0:5])  
@@ -268,7 +268,7 @@ print(f"Shape of image after SequentialCell:{image_after_sequential.shape}")
 Shape of image after SequentialCell:(64, 10)
 ```
 #### nn.Softmax
-[[全连接神经网络以及训练流程#Softmax 函数|Softmax]] 是将神经网络最后一个全连接层返回的logits的值缩放为$[0,1]$，表示每一个类别的预测概率
+[[../../HCIA-AI/2-深度学习和大模型基础/全连接神经网络以及训练流程#Softmax 函数|Softmax]] 是将神经网络最后一个全连接层返回的logits的值缩放为$[0,1]$，表示每一个类别的预测概率
 ```python
 softmax = nn.Softmax(axis=-1)  
 pred_probab = softmax(logits)
@@ -313,7 +313,7 @@ model.trainable_params
 # 模型训练流程
 对于框架而言，深度学习整体流程包含四个部分
 - 通过正向计算得到 logits
-- 通过[[全连接神经网络以及训练流程#损失函数|损失函数]]计算正向结果 logits 和正确标签 targets 之间的误差，也就是 loss
+- 通过[[../../HCIA-AI/2-深度学习和大模型基础/全连接神经网络以及训练流程#损失函数|损失函数]]计算正向结果 logits 和正确标签 targets 之间的误差，也就是 loss
 - 根据 loss 进行反向传播，获得整个权重对应的梯度
 - 把梯度更新到网络权重上
 ## 单步训练逻辑及过程
@@ -366,7 +366,7 @@ def train_step(data, label):
     return loss
 ```
 在函数返回 loss, logits, grads 就可以将梯度值 grads 放入 optimizer 中进行权重更新，完成一个完整的步骤训练。权重更新的过程也称为模型优化（$mo d el\ optimization$）
-模型优化是 MindSpore 提供的多种优化算法的实现，称为[[全连接神经网络以及训练流程#优化器|优化器]]（$optimmizer$）
+模型优化是 MindSpore 提供的多种优化算法的实现，称为[[../../HCIA-AI/2-深度学习和大模型基础/全连接神经网络以及训练流程#优化器|优化器]]（$optimmizer$）
 优化器内部定义了模型的参数优化过程，即梯度如何更新至模型参数，在这里我们使用的是随机梯度下降（$stochastic\ gradient\ descent,\ SGD$）
 ```python
 # 定义优化器  
