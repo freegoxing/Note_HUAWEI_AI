@@ -4,7 +4,7 @@ CANN （ Compute Architecture for Neural Networks）是昇腾针对AI场景推�
 *对标的是NVIDA的CUDA（Compute Unified Device Architecture）、AMD的ROCm（Radeon Open Compute platform）*
 #### CANN的总体架构
 一共有5层结构
-![[Pasted image 20251101104348.png]]
+![](assets/昇腾AI基础软件/Pasted%20image%2020251101104348.png)
 ## MindSpore
 MindSpore作为新一代深度学习框架，是源于全产业的最佳实践，最佳匹配昇腾处理器算力，支持终端、边缘、云全场景灵活部署，开创全新的AI编程范式，降低AI开发门槛
 *旨在实现易开发、高效执行、全场景统一部署三大目标*
