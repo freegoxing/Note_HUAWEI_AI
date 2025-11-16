@@ -1,1 +1,0 @@
-/home/free/Code/Python/PythonProject/HUAWEI_AI/人工智能：原理与运用/02深度学习框架入门/01基于昇思MindSpore的手写数字识别实践.md
