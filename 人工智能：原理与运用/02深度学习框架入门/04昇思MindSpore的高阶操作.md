@@ -1,5 +1,5 @@
 # 函数式自动微分
-![[Pasted image 20251112210332.png|500]]
+![500](assets/04昇思MindSpore的高阶操作/Pasted%20image%2020251112210332.png)
 这个是对输入的$x$,进行操作输出logits 
 $$
 \begin{gather}

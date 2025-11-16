@@ -43,7 +43,7 @@ print(f"4. Dimension of 3D tensor:\n {tensor_3d.ndim}")
  3
  ```
 # 数据预处理方法
-![[Pasted image 20251015144939.png]]
+![](assets/01基于昇思MindSpore的手写数字识别实践/Pasted%20image%2020251015144939.png)
 在数据预处理种，MindSpore提供基于Pipeline的数据引擎
 ## 数据集下载和加载
 在 `mindspore.dataset` 提供了多种内置的数据集兼容接口
@@ -120,7 +120,7 @@ shape of image [N C H W]:(32, 28, 28, 1)
 ```
 经过预处理后， 数据集的图片变成了四维张量分别是$(Batchsize,\ Channels,\ Height,\ Weight)$
 #### 数据预处理流水线（pipeline）
-![[Pasted image 20251016094556.png|350]]
+![400](assets/01基于昇思MindSpore的手写数字识别实践/Pasted%20image%2020251016094556.png)
 ```python
 def datapipe(path:str, batch_size:int=32):  
     image_transforms = [  
@@ -350,7 +350,7 @@ def forward_fn(data, label):
 ```
 我们直接调用模型，将数据输入模型，获得二位张量输出（logits），包含了每一个类别的原始预测值。然后利用损失函数（loss_fn）评估模型的预测值和目标值的误差。
 不同的损失函数使用于不同的任务
-![[Pasted image 20251110203750.png|600]]
+![](assets/01基于昇思MindSpore的手写数字识别实践/Pasted%20image%2020251110203750.png)
 #### 反向计算
 ```python
 # 定义梯度更新函数  
