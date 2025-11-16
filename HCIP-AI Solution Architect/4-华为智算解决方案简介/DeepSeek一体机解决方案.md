@@ -1,0 +1,1 @@
+![[HCIP-AI Solution Architect V1.0 培训教材.pdf#page=322&rect=78,512,468,618&color=red|HCIP-AI Solution Architect V1.0 培训教材, p.322]]
