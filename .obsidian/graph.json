@@ -34,6 +34,13 @@
         "a": 1,
         "rgb": 328965
       }
+    },
+    {
+      "query": "path:人工智能-原理与运用  ",
+      "color": {
+        "a": 1,
+        "rgb": 1841623
+      }
     }
   ],
   "collapse-display": false,
@@ -46,6 +53,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.46822130772748016,
+  "scale": 0.7023319615912202,
   "close": true
 }

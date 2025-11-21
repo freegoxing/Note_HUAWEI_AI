@@ -239,7 +239,7 @@ After dense: (64, 512)
 - $weight\_init$：权重初始化
 - $bias\_init$：偏置初始化
 #### nn.ReLU
-[[../../HCIA-AI/2-深度学习和大模型基础/全连接神经网络以及训练流程#ReLU 函数|ReLU]]是网络中加入的非线性的激活函数，帮助神经网络学习各种复杂的特征
+[[../03神经网络基础/激活函数#ReLU 函数|ReLU]]是网络中加入的非线性的激活函数，帮助神经网络学习各种复杂的特征
 ```python 
 relu_layer = nn.ReLU()  
 image_after_relu = relu_layer(image_after_dense1[0:5])  
@@ -268,7 +268,7 @@ print(f"Shape of image after SequentialCell:{image_after_sequential.shape}")
 Shape of image after SequentialCell:(64, 10)
 ```
 #### nn.Softmax
-[[../../HCIA-AI/2-深度学习和大模型基础/全连接神经网络以及训练流程#Softmax 函数|Softmax]] 是将神经网络最后一个全连接层返回的logits的值缩放为$[0,1]$，表示每一个类别的预测概率
+[[../03神经网络基础/激活函数#Softmax 函数|Softmax]] 是将神经网络最后一个全连接层返回的logits的值缩放为$[0,1]$，表示每一个类别的预测概率
 ```python
 softmax = nn.Softmax(axis=-1)  
 pred_probab = softmax(logits)
@@ -313,7 +313,7 @@ model.trainable_params
 # 模型训练流程
 对于框架而言，深度学习整体流程包含四个部分
 - 通过正向计算得到 logits
-- 通过[[../../HCIA-AI/2-深度学习和大模型基础/全连接神经网络以及训练流程#损失函数|损失函数]]计算正向结果 logits 和正确标签 targets 之间的误差，也就是 loss
+- 通过[[../03神经网络基础/损失函数|损失函数]]计算正向结果 logits 和正确标签 targets 之间的误差，也就是 loss
 - 根据 loss 进行反向传播，获得整个权重对应的梯度
 - 把梯度更新到网络权重上
 ## 单步训练逻辑及过程
